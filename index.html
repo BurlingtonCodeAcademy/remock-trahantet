@@ -1,14 +1,91 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Mockup Home</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
+
   <body>
-    <section id="header"></section>
-    <section id="features"></section>
-    <section id="main"></section>
-    <section id="footer"></section>
+    <section id="header">
+      <h1 id="header-main">header</h1>
+      <h4 id="header-sub">subtitle</h4>
+      <!-- need a double lined border on bottom -->
+    </section>
+    <section id="features">
+      <!-- header and three images with captions, with "tell me more button" -->
+      <h2 id="feature-header">HEADER</h2>
+      <div id="image-container">
+        <figure>
+          <img class="feature-image" />
+          <figcaption>caption1</figcaption>
+        </figure>
+        <figure>
+          <img class="feature-image" />
+          <figcaption>caption2</figcaption>
+        </figure>
+        <figure>
+          <img class="feature-image" />
+          <figcaption>caption3</figcaption>
+        </figure>
+      </div>
+      <button id="tell-more">tell me more</button>
+      <!-- double line separator -->
+    </section>
+    <section id="quote">THIS IS A QUOTE</section>
+    <!--double line separator -->
+    <section id="main">
+      <!-- main portion includes 4 sections: quote header section, 1 column to left with featured articles and column to right with 2 smaller sections: top section is blog posts and bottom portion is "learn more" -->
+      <div id="main-featured-articles">
+        <div id="feature-article-one" class="article-container">
+          <h4>article 1</h4>
+          <!--  -->
+          <img />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos id vel
+            libero hic quae in. Animi perferendis tenetur harum doloremque ipsum
+            sed dicta? Ipsam hic harum iste quod earum excepturi voluptatibus at
+            ratione soluta eos, nemo voluptatem voluptas, consectetur optio
+            consequuntur assumenda blanditiis saepe autem, illo nisi deserunt
+            officiis quam?
+          </p>
+          <button id="main-featured-button">continue reading</button>
+        </div>
+        <div id="feature-article-two" class="article-container">
+          <h4>article 1</h4>
+          <!--  -->
+          <img />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
+            maxime accusamus sunt atque pariatur! Repudiandae vitae in vel est!
+            Non, architecto labore error culpa a minima soluta consequatur ex
+            ab, reiciendis quas tempora maiores quod ipsum est assumenda vero
+            sint! Voluptate doloremque molestiae est veritatis, voluptas nulla
+            dicta fuga labore!
+          </p>
+          <button id="main-featured-button">continue reading</button>
+        </div>
+      </div>
+      <div id="main-blog-reads">
+        <div class="chronological-blogs">
+          <div>blog one</div>
+          <div>blog two</div>
+          <div>blog three</div>
+        </div>
+        <div class="learn-mores">
+          <div>learn one</div>
+          <div>learn two</div>
+          <div>learn three</div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <!-- form -->
+      <div>footer</div>
+    </section>
   </body>
 </html>
