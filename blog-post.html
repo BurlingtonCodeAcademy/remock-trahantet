@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link href="styles/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
   </head>
   <body>
     <section id="header">
@@ -16,7 +18,7 @@
       <!-- main portion includes 4 sections: quote header section, 1 column to left with featured articles and column to right with 2 smaller sections: top section is blog posts and bottom portion is "learn more" -->
       <div id="main-featured-articles">
         <div id="feature-article-one" class="article-container">
-          <h2>article 1</h2>
+          <h2 id = "blog-title">article 1</h2>
           <img />
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magnam ut voluptate totam asperiores
@@ -89,5 +91,23 @@
             laboriosam voluptas qui. Ad ut hic numquam, voluptatem asperiores voluptas sed!
           </p>
         </div> 
+      </div>
+    </section>
+    <section id="footer">
+        <h3 class = "header">this is the footer header</h3>
+        <div id="submit-form">
+          <!-- form -->
+          <form action="/my-handling-form-page" method="post">
+                <input type="text" id="name" name="user_name" placeholder="Name">
+                <input type="email" id="mail" name="user_email" placeholder="Email">
+                <textarea id="msg" name="user_message" placeholder="Message"></textarea>
+                <button type="button">Submit</button>
+          </form>
+          <div id="social-media-stuff">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta nihil voluptatem molestias odio quos est? Ullam aliquam consectetur expedita nihil facere adipisci itaque assumenda facilis impedit sint esse saepe totam, corporis, fuga qui eaque. Illum, dolore aperiam quo omnis accusamus reiciendis, repudiandae ipsam molestiae incidunt ullam magnam! Accusamus, harum.</p>
+          </div>
+        </div>
+        
+    </section>
   </body>
 </html>

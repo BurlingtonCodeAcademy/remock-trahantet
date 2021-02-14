@@ -4,12 +4,14 @@
     <title>Learn More</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link href="styles/style-learn.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
   </head>
   <body>
     <section id="header">
-      <a href= "./index.html"><h1 id="header-main">Learn More</h1></a>
-      <h4 id="header-sub">subtitle</h4>
+      <a href= "./index.html"><h1 class = "header" id="header-main">Learn More</h1></a>
+      <h4 class = "header" id="header-sub">subtitle</h4>
       <div class="h-break">
     </section>
     <section id="main">
@@ -18,25 +20,25 @@
         <div class="chronological-blogs">
           <div>
             <div id="date-box">Date</div>
-            <h3>what a great blog1</h3>
+            <h3 class = "header" >what a great blog1</h3>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odio nesciunt eum non eveniet modi
               deserunt, soluta esse ut architecto? </p>
           </div>
           <div>
             <div id="date-box">Date</div>
-            <h3>what a great blog2</h3>
+            <h3 class = "header" >what a great blog2</h3>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odio nesciunt eum non eveniet modi
               deserunt, soluta esse ut architecto? </p>
           </div>
           <div>
             <div id="date-box">Date</div>
-            <h3>what a great blog3</h3>
+            <h3 class = "header" >what a great blog3</h3>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odio nesciunt eum non eveniet modi
               deserunt, soluta esse ut architecto? </p>
           </div>
           <div>
             <div id="date-box">Date</div>
-            <h3>what a great blog4</h3>
+            <h3 class = "header">what a great blog4</h3>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odio nesciunt eum non eveniet modi
               deserunt, soluta esse ut architecto? </p>
           </div>
@@ -44,7 +46,7 @@
         <div class="h-break"></div>
         <div class="learn-mores">
           <div>
-            <h3>Learn More Heading</h3>
+            <h3 class = "header">Learn More Heading</h3>
             <img />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repellendus sequi sunt debitis, maiores
               ratione saepe commodi fugit nihil temporibus facilis cupiditate consectetur sed error obcaecati earum vero
@@ -52,7 +54,7 @@
               <a href="learn-more.html"><button id="learn-more-button">learn more</button></a>
           </div>
           <div>
-            <h3>Learn More Heading2</h3>
+            <h3 class = "header">Learn More Heading2</h3>
             <img />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repellendus sequi sunt debitis, maiores
               ratione saepe commodi fugit nihil temporibus facilis cupiditate consectetur sed error obcaecati earum vero
@@ -63,7 +65,7 @@
       </div>
       <div id="main-featured-articles">
         <div id="feature-article-one" class="article-container">
-          <h2>article 1</h2>
+          <h2 class = "header">article 1</h2>
           <img />
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magnam ut voluptate totam asperiores
@@ -72,7 +74,7 @@
             laudantium odio quisquam, voluptatem, neque expedita facilis. Deserunt, iure in eligendi expedita culpa quo
             fugiat non dolores, odio quas quam doloremque, nemo sequi dignissimos perferendis magni ipsa labore aliquid.
           </p>
-          <h4>mit article heading</h4>
+          <h4 class = "header">mit article heading</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem consectetur nulla at unde sit culpa
             veritatis, voluptate, earum molestias libero, delectus error? Quisquam enim iste in, eligendi, voluptate, a
@@ -93,7 +95,7 @@
             architecto at beatae! Nulla rerum tempora, dolorum nemo libero at temporibus voluptate sequi rem quis
             laboriosam voluptas qui. Ad ut hic numquam, voluptatem asperiores voluptas sed!
           </p>
-          <h4>mit article heading</h4>
+          <h4 class = "header">mit article heading</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem consectetur nulla at unde sit culpa
             veritatis, voluptate, earum molestias libero, delectus error? Quisquam enim iste in, eligendi, voluptate, a
@@ -114,7 +116,7 @@
             architecto at beatae! Nulla rerum tempora, dolorum nemo libero at temporibus voluptate sequi rem quis
             laboriosam voluptas qui. Ad ut hic numquam, voluptatem asperiores voluptas sed!
           </p>
-          <h4>mit article heading</h4>
+          <h4 class = "header">mit article heading</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem consectetur nulla at unde sit culpa
             veritatis, voluptate, earum molestias libero, delectus error? Quisquam enim iste in, eligendi, voluptate, a
@@ -140,38 +142,21 @@
       
     </section>
     <section id="footer">
-      <h3>this is the footer header</h3>
-  
+      <h3 class = "header">this is the footer header</h3>
       <div id="submit-form">
         <!-- form -->
         <form action="/my-handling-form-page" method="post">
-          <ul>
-            <li>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="user_name" placeholder="name">
-            </li>
-            <li>
-              <label for="mail">E-mail:</label>
-              <input type="email" id="mail" name="user_email" placeholder="email">
-            </li>
-            <li>
-              <label for="msg">Message:</label>
+              <input type="text" id="name" name="user_name" placeholder="Name">
+              <input type="email" id="mail" name="user_email" placeholder="Email">
               <textarea id="msg" name="user_message" placeholder="Message"></textarea>
-            </li>
-            <li class="button">
               <button type="button">Submit</button>
-            </li>
-          </ul>
         </form>
         <div id="social-media-stuff">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta nihil voluptatem molestias odio quos est? Ullam aliquam consectetur expedita nihil facere adipisci itaque assumenda facilis impedit sint esse saepe totam, corporis, fuga qui eaque. Illum, dolore aperiam quo omnis accusamus reiciendis, repudiandae ipsam molestiae incidunt ullam magnam! Accusamus, harum.</p>
-  
         </div>
       </div>
-  
-  
-  
-    </section>
+      
+   </section>
   </body>
   
 </html>

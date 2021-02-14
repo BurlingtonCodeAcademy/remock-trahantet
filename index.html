@@ -6,17 +6,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="styles/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <section id="header">
-    <h1 id="header-main">Homepage</h1>
-    <h4 id="header-sub">subtitle</h4>
+    <h1 class="header" id="header-main">Homepage</h1>
+    <h4 class="header" id="header-sub">subtitle</h4>
     <div class="h-break">
   </section>
   <section id="features">
     <!-- header and three images with captions, with "tell me more button" -->
-    <h2 id="feature-header">HEADER</h2>
+    <p class="header" id="feature-header">TAKE A LOOK AT THIS AMAZING <b>HOME PAGE</b>!</p>
     <div id="image-container">
       <figure>
         <img class="feature-image" />
@@ -31,7 +33,7 @@
         <figcaption>caption3</figcaption>
       </figure>
     </div>
-    <button id="tell-more">tell me more</button>
+    <button id="tell-more"><img> tell me more</button>
     <!-- double line separator -->
   </section>
   <section id="quote">THIS IS A QUOTE</section>
@@ -40,7 +42,7 @@
     <!-- main portion includes 4 sections: quote header section, 1 column to left with featured articles and column to right with 2 smaller sections: top section is blog posts and bottom portion is "learn more" -->
     <div id="main-featured-articles">
       <div id="feature-article-one" class="article-container">
-        <h4>article 1</h4>
+        <h4 class="header">article 1</h4>
         <!--  -->
         <img />
         <p>
@@ -51,11 +53,11 @@
           fugiat non dolores, odio quas quam doloremque, nemo sequi dignissimos perferendis magni ipsa labore aliquid.
 
         </p>
-        <a href="./continue-reading.html"><button id="main-featured-button">continue reading</button></a>
+        <a href="./continue-reading.html"><button id="main-featured-button"><img> continue reading</button></a>
       </div>
       <div class="h-break"></div>
       <div id="feature-article-two" class="article-container">
-        <h4>article 1</h4>
+        <h4 class="header">article 1</h4>
         <!--  -->
         <img />
         <p>
@@ -79,27 +81,29 @@
           laboriosam voluptas qui. Ad ut hic numquam, voluptatem asperiores voluptas sed!
 
         </p>
-        <button id="main-featured-button">continue reading</button>
+        <a href="./continue-reading.html"><button id="main-featured-button"><img> continue reading</button></a>
       </div>
     </div>
     <div id="main-blog-reads">
       <div class="chronological-blogs">
         <div>
           <div id="date-box">Date</div>
-          <a href="./blog-post.html"><h3>what a great blog1</h3></a>
+          <a href="./blog-post.html">
+            <h3 class="header">what a great blog1</h3>
+          </a>
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odio nesciunt eum non eveniet modi
             deserunt, soluta esse ut architecto? </p>
 
         </div>
         <div>
           <div id="date-box">Date</div>
-          <h3>what a great blog2</h3>
+          <h3 class="header">what a great blog2</h3>
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odio nesciunt eum non eveniet modi
             deserunt, soluta esse ut architecto? </p>
         </div>
         <div>
           <div id="date-box">Date</div>
-          <h3>what a great blog3</h3>
+          <h3 class="header">what a great blog3</h3>
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odio nesciunt eum non eveniet modi
             deserunt, soluta esse ut architecto? </p>
         </div>
@@ -107,20 +111,20 @@
       <div class="h-break"></div>
       <div class="learn-mores">
         <div>
-          <h3>Learn More Heading</h3>
+          <h3 class="header">Learn More Heading</h3>
           <img />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repellendus sequi sunt debitis, maiores
             ratione saepe commodi fugit nihil temporibus facilis cupiditate consectetur sed error obcaecati earum vero
             asperiores alias?</p>
-            <a href="learn-more.html"><button id="learn-more-button">learn more</button></a>
+          <a href="learn-more.html"><button id="learn-more-button"><img> learn more</button></a>
         </div>
         <div>
-          <h3>Learn More Heading2</h3>
+          <h3 class="header">Learn More Heading2</h3>
           <img />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repellendus sequi sunt debitis, maiores
             ratione saepe commodi fugit nihil temporibus facilis cupiditate consectetur sed error obcaecati earum vero
             asperiores alias?</p>
-            <a href="learn-more.html"><button id="learn-more-button">learn more</button></a>
+          <a href="learn-more.html"><button id="learn-more-button"><img> learn more</button></a>
         </div>
         <!-- <div>
           <h3>Learn More Heading3</h3>
@@ -134,36 +138,60 @@
     </div>
   </section>
   <section id="footer">
-    <h3>this is the footer header</h3>
-
+    <h3 class="header">this is the footer header</h3>
     <div id="submit-form">
       <!-- form -->
       <form action="/my-handling-form-page" method="post">
-        <ul>
-          <li>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name" placeholder="name">
-          </li>
-          <li>
-            <label for="mail">E-mail:</label>
-            <input type="email" id="mail" name="user_email" placeholder="email">
-          </li>
-          <li>
-            <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message" placeholder="Message"></textarea>
-          </li>
-          <li class="button">
-            <button type="button">Submit</button>
-          </li>
-        </ul>
+        <input type="text" id="name" name="user_name" placeholder="Name">
+        <input type="email" id="mail" name="user_email" placeholder="Email">
+        <textarea id="msg" name="user_message" placeholder="Message"></textarea>
+        <button type="button">Submit</button>
       </form>
       <div id="social-media-stuff">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta nihil voluptatem molestias odio quos est? Ullam aliquam consectetur expedita nihil facere adipisci itaque assumenda facilis impedit sint esse saepe totam, corporis, fuga qui eaque. Illum, dolore aperiam quo omnis accusamus reiciendis, repudiandae ipsam molestiae incidunt ullam magnam! Accusamus, harum.</p>
-
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta nihil voluptatem molestias odio quos
+          est? Ullam aliquam consectetur expedita nihil facere adipisci itaque assumenda facilis impedit sint esse saepe
+          totam, corporis, fuga qui eaque. Illum, dolore aperiam quo omnis accusamus reiciendis, repudiandae ipsam
+          molestiae incidunt ullam magnam! Accusamus, harum.</p>
+        <div id="left">
+          <div>
+            <img>
+            <p>48 Monroe st. <br>
+              Burlington, vt <br>
+              5041</p>
+          </div>
+          <div>
+            <img>
+            <a href="tel:+xxxxxxxxxx">
+              <p>xxx-xxx-xxxx</p>
+            </a>
+          </div>
+          <div>
+            <img>
+            <a href="mailto:info@untitled.com">
+              <p>info@untitled.com</p>
+            </a>
+          </div>
+        </div>
+        <div id="right">
+          <div>
+            <img>
+            <p>twitter</p>
+          </div>
+          <div>
+            <img>
+            <p>instagram.com</p>
+          </div>
+          <div>
+            <img>
+            <p>dribble.com</p>
+          </div>
+          <div>
+            <img>
+            <p>facebook.com</p>
+          </div>
+        </div>
       </div>
     </div>
-
-
 
   </section>
 </body>
