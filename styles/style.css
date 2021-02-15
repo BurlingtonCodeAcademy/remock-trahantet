@@ -1,17 +1,25 @@
 body {
   margin: 0;
   margin-bottom: 3px;
-
-  background-image: linear-gradient(rgb(201, 198, 198), rgb(5, 63, 44));
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(rgb(254, 250, 224), rgb(96, 108, 56));
 }
 
 .header {
   font-family: "Bangers", cursive;
+  color: rgb(40, 54, 24);
 }
 
-button > img {
-  width: 10px;
-  height: 10px;
+button > img{
+  width: 50px;
+  height: 30px;
+  /* margin: auto; */
+  text-justify: center;
+  
+}
+button > p {
+    font-size: 15px;
+    margin: 0;
 }
 /* -------------- TOP OF PAGE HEADER ------------------- */
 
@@ -20,13 +28,11 @@ button > img {
 }
 
 #header-main {
-  color: rgb(10, 41, 9);
   font-size: 75px;
   margin-top: 2em;
 }
 
 #header-sub {
-  color: rgb(19, 59, 18);
   margin: 0.5em;
   margin-bottom: 2em;
 }
@@ -41,6 +47,12 @@ button > img {
   width: 70vw;
 }
 
+hr{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
 /* -------------- Featured images ------------------- */
 
 #features {
@@ -51,8 +63,8 @@ button > img {
   justify-content: center;
 }
 #feature-header {
-  color: rgb(10, 41, 9);
   font-size: 22px;
+  color: rgb(1, 59, 1);
 }
 
 #image-container {
@@ -76,9 +88,12 @@ button > img {
 }
 
 #tell-more {
-  height: 30px;
-  width: 120px;
-  background-color: orange;
+  display: flex;
+  height: 40px;
+  width: 200px;
+  background-color: rgb(221, 161, 94);
+  align-items: center;
+  justify-content: left;
 }
 
 /* -------------- Quote break ------------------- */
@@ -89,7 +104,7 @@ button > img {
   height: 20vh;
   justify-content: center;
   align-items: center;
-  background-color: rgb(233, 189, 171);
+  background-color: rgb(188, 108, 37);
 
   color: rgb(10, 41, 9);
   font-size: 50px;
@@ -120,16 +135,23 @@ button > img {
 .article-container > img {
   width: 49vw; /*same width as container*/
   height: 30vh;
+  background-image: linear-gradient(rgb(236, 208, 113), rgb(172, 129, 122));
 }
 
 #main-featured-articles > .h-break {
   width: 50vw;
 }
 #main-featured-button {
-  width: 10vw;
-  background-color: rgb(228, 97, 10);
+  display: flex;
+  width: 15vw;
+  background-color: rgb(221, 161, 94);
   margin-bottom: 30px;
-  text-align: left;
+  align-items: center;
+  justify-content: left;
+}
+
+#main-featured-button:hover{
+    background-color: grey;
 }
 
 /* -------------- right side: blogs and learn more ------------------- */
@@ -140,15 +162,9 @@ button > img {
   margin: 10px;
 }
 
-.chronological-blogs,
-.learn-mores {
-  /* border: 1px dashed purple; */
-  /* height: 50vh; */
-}
-
 .chronological-blogs > div,
 .learn-mores > div {
-  border-bottom: 1px solid purple;
+  /* border-bottom: 1px solid purple; */
 }
 
 #main-blog-reads > .h-break {
@@ -159,7 +175,7 @@ button > img {
 
 #date-box {
   width: 5vw;
-  background-color: grey;
+  background-color:rgb(77, 80, 63);
   color: white;
   text-align: center;
   margin-top: 10px;
@@ -168,10 +184,16 @@ button > img {
 /* -------------- right side botton -learn mores ------------------- */
 
 #learn-more-button {
-  width: 10vw;
-  background-color: rgb(228, 97, 10);
+  display: flex;
+  width: 12vw;
+  background-color: rgb(221, 161, 94);
   margin-bottom: 10px;
-  text-align: left;
+  align-items: center;
+  justify-content: left;
+}
+
+#learn-more-button:hover{
+    background-color: grey;
 }
 
 .learn-mores div > img {
@@ -179,12 +201,13 @@ button > img {
   height: 100px;
   margin-right: 5px;
   float: left;
+  background-image: linear-gradient(rgb(236, 208, 113), rgb(172, 129, 122));
 }
 
 /* -------------- footer ------------------- */
 
 #footer {
-  height: 40vh;
+  /* height: 40vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,17 +217,21 @@ button > img {
 
 #submit-form {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
   width: 40vw;
   padding: 1em;
   text-align: left;
+  
 }
 
 #name,
 #mail {
   display: inline;
+  background-color:rgb(254, 250, 224);
 }
 
 #msg {
@@ -212,12 +239,12 @@ form {
   height: 20vh;
   margin-bottom: 0.5em;
   width: 38.2vw;
+  background-color:rgb(254, 250, 224);
 }
 
 #social-media-stuff {
   /* border: 1px solid black; */
   width: 40vw;
-  margin-right: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 1px;
@@ -230,7 +257,10 @@ form {
 
 #left div,
 #right div {
+  display: flex;
   margin: 12px;
+  justify-content: left;
+  align-items: center;
 }
 
 #right {
@@ -240,13 +270,19 @@ form {
 
 #left img,
 #right img {
-  width: 1em;
-  height: 1em;
+    width: 30px;
+    height: 30px;
+    /* margin: auto; */
+    text-justify: center;
+    background-color:rgb(254, 250, 224);
+    padding:5px;
+    border-radius: 50%;
 }
 
 #left p,
 #right p {
   display: inline;
+  margin: 5px;
 }
 
 #social-media-stuff p {
@@ -287,6 +323,11 @@ textarea:focus {
 #form button {
   margin-left: 0.5em;
   padding-left: 90px;
+  background-color:rgb(254, 250, 224);
+}
+
+#form button:hover{
+    background-color: grey;
 }
 
 /*  --------------------- blog only page ------------------------- */
