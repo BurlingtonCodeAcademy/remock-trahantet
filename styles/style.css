@@ -80,13 +80,12 @@ hr {
   width: 70vw;
   justify-content: space-around;
   align-items: center;
-  padding: 1em 1em;
 }
 
 .feature-image {
   border: 3px groove;
-  height: 150px;
-  width: 300px;
+  height: 200px;
+  width: 350px;
   background-image: linear-gradient(rgb(236, 208, 113), rgb(172, 129, 122));
 }
 
@@ -174,6 +173,7 @@ hr {
 
 #main-blog-reads > .h-break {
   width: 20vw;
+  margin-bottom: 30px;
 }
 
 /* -------------- right side top -blogs ------------------- */
@@ -197,9 +197,9 @@ hr {
     color: rgb(80, 96, 47);
 }
 
-/* -------------- right side botton -learn mores ------------------- */
+/* -------------- right side bottom -learn mores ------------------- */
 .learn-mores div a{
-    outline: none;
+  outline: none;
   text-decoration: none;
   padding: 2px 1px 0;
 }
@@ -223,8 +223,8 @@ hr {
 }
 
 .learn-mores div > img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin-right: 5px;
   float: left;
   background-image: linear-gradient(rgb(236, 208, 113), rgb(172, 129, 122));
