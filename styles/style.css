@@ -1,0 +1,368 @@
+body {
+  margin: 0;
+  margin-bottom: 3px;
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(rgb(254, 250, 224), rgb(96, 108, 56));
+}
+
+.header {
+  font-family: "Bangers", cursive;
+  color: rgb(40, 54, 24);
+}
+
+button > img {
+  width: 50px;
+  height: 30px;
+  /* margin: auto; */
+  text-justify: center;
+}
+button > p {
+  font-size: 15px;
+  margin: 0;
+}
+/* -------------- TOP OF PAGE HEADER ------------------- */
+
+#header {
+  text-align: center;
+}
+
+#header-main {
+  font-size: 75px;
+  margin-top: 2em;
+}
+
+#header-sub {
+margin-top: -3em;
+  margin-bottom: 2em;
+}
+
+#header a{
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+#header a h1:hover{
+    color: rgb(80, 96, 47);
+}
+
+.h-break {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  height: 5px;
+  width: 70vw;
+}
+
+hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* -------------- Featured images ------------------- */
+
+#features {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+}
+#feature-header {
+  font-size: 22px;
+  color: rgb(40, 54, 24);
+}
+
+#image-container {
+  display: flex;
+  width: 70vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.feature-image {
+  border: 3px groove;
+  height: 200px;
+  width: 350px;
+  background-image: linear-gradient(rgb(236, 208, 113), rgb(172, 129, 122));
+}
+
+.feature-image ~ figcaption {
+  text-align: center;
+  margin: 20px;
+}
+
+#tell-more {
+  display: flex;
+  height: 40px;
+  width: 10vw;
+  background-color: rgb(221, 161, 94);
+  align-items: center;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+/* -------------- Quote break ------------------- */
+
+#quote {
+  /* border: 1px solid black; */
+  display: flex;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(188, 108, 37);
+
+  color: rgb(10, 41, 9);
+  font-size: 50px;
+}
+
+/* -------------- main section ------------------- */
+
+#main {
+  display: flex;
+  /* background-color: thistle; */
+  justify-content: center;
+}
+
+/* -------------- left side - featured articles -2 ------------------- */
+#main-featured-articles {
+  /* border: 1px solid black; */
+  width: 50vw;
+  margin: 10px;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  /* height: 50vh; */
+}
+
+.article-container > img {
+  width: 49vw; /*same width as container*/
+  height: 30vh;
+  background-image: linear-gradient(rgb(236, 208, 113), rgb(172, 129, 122));
+}
+
+#main-featured-articles > .h-break {
+  width: 50vw;
+}
+#main-featured-button {
+  display: flex;
+  width: 15vw;
+  background-color: rgb(221, 161, 94);
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+#main-featured-button:hover {
+  background-color: rgb(238, 206, 159);
+}
+
+/* -------------- right side: blogs and learn more ------------------- */
+
+#main-blog-reads {
+  /* border:1px solid teal; */
+  width: 20vw;
+  margin: 10px;
+}
+
+#main-blog-reads > .h-break {
+  width: 20vw;
+  margin-bottom: 30px;
+}
+
+/* -------------- right side top -blogs ------------------- */
+
+#date-box {
+  width: 5vw;
+  background-color: rgb(80, 96, 47);
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.chronological-blogs div a{
+    outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+.chronological-blogs div a h3:hover{
+    color: rgb(80, 96, 47);
+}
+
+/* -------------- right side bottom -learn mores ------------------- */
+.learn-mores div a{
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+.learn-mores div a h3:hover{
+    color: rgb(80, 96, 47);
+}
+
+#learn-more-button {
+  display: flex;
+  width: 12vw;
+  background-color: rgb(221, 161, 94);
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+#learn-more-button:hover {
+  background-color: rgb(238, 206, 159);
+}
+
+.learn-mores div > img {
+  width: 150px;
+  height: 150px;
+  margin-right: 5px;
+  float: left;
+  background-image: linear-gradient(rgb(236, 208, 113), rgb(172, 129, 122));
+}
+
+/* -------------- footer ------------------- */
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(80, 96, 47);
+}
+
+#footer .header {
+  color: rgb(254, 250, 224);
+}
+
+#submit-form {
+  display: flex;
+  align-items: center;
+}
+
+form {
+  width: 40vw;
+  padding: 1em;
+  text-align: left;
+}
+
+#name,
+#mail {
+  display: inline;
+  height: 3em;
+  margin-bottom: 1em;
+  background-color: rgb(254, 250, 224);
+}
+
+#msg {
+  display: block;
+  height: 20vh;
+  margin-bottom: 0.5em;
+  width: 38.2vw;
+  background-color: rgb(254, 250, 224);
+}
+
+#footer h3 {
+  text-align: center;
+  position: relative;
+}
+
+input {
+  font: 1em sans-serif;
+  width: 19vw;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  margin: auto;
+}
+
+textarea {
+  font: 1em sans-serif;
+  width: 38vw;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  vertical-align: top;
+  height: 5em;
+  color: black;
+  margin-top: 5px;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+#submit-form button {
+    display: flex;
+    align-items: center;
+  text-align: center;
+  width: 10vw;
+  height: 5vh;
+  background-color: rgb(254, 250, 224);
+}
+
+#submit-form button:hover {
+  background-color: rgb(238, 206, 159);
+}
+
+/* ----------------  social media stuff -------------------- */
+#social-media-stuff {
+  /* border: 1px solid black; */
+  width: 40vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1px;
+}
+
+#left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#left div,
+#right div {
+  display: flex;
+  margin: 12px;
+  justify-content: left;
+  align-items: center;
+}
+
+#right {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#left img,
+#right img {
+  width: 30px;
+  height: 30px;
+  /* margin: auto; */
+  text-justify: center;
+  background-color: rgb(254, 250, 224);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+#left p,
+#right p {
+  display: inline;
+  margin: 5px;
+}
+
+#social-media-stuff p {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+/*  --------------------- blog only page ------------------------- */
+
+#blog-title {
+  text-align: center;
+}
